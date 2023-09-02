@@ -1,0 +1,5 @@
+# Ignore compiled Python files
+_pycache_/
+
+# Ignore Visual Studio Code settings and workspace files
+.vscode/
