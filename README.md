@@ -1,5 +1,5 @@
-### Summary: give an overview of code snippets for supervised machine learning algorithms
-## Dataset: 
+## Summary: give an overview of code snippets for supervised machine learning algorithms
+### Dataset: 
 1. Claasification target variable(binary 0 or 1):
 Models included:   
     - K-Nearest Neighbors
