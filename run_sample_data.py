@@ -4,15 +4,8 @@ import pandas as pd
 import seaborn as sns
 from sklearn.metrics import classification_report
 
-from constants import (
-    BATCH_SIZE,
-    COL_NUM,
-    COLS_BINARY,
-    DROPOUT_OPTIONS,
-    EPOCHS,
-    LR_OPTIONS,
-    NUM_NODES_OPTIONS,
-)
+from constants import (BATCH_SIZE, COL_NUM, COLS_BINARY, DROPOUT_OPTIONS,
+                       EPOCHS, LR_OPTIONS, NUM_NODES_OPTIONS)
 from helper_functions import plot_each_var, sample_data_standard
 from knn import Knn_model
 from linear_regression import Linear_regression
@@ -52,6 +45,7 @@ def numeric_data(logger):
     logger.info("Starting with multiple linear regression...")
     multiple_model = Linear_regression(train, valid, test, df.columns[1:], logger)
     multi_l_r, X_train, y_train = multiple_model.fit_reg()
+    logger.info("Starting with multiple linear regression with Neural network...")
     nn_model_linear, nn_model_multi_relu = multiple_model.fit_nn(
         num_regress=X_train.shape[1]
     )
