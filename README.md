@@ -1,6 +1,10 @@
-## Summary: give an overview of supervised machine learning algorithms
-### Dataset: 
-1. Claasification target variable(binary 0 or 1):
+## Summary: An overview of supervised machine learning algorithms
+
+### Runable script 1:
+- main.py: demonstration of different models on binary data and numerical data
+
+#### Dataset: 
+1. binary target variable(binary 0 or 1):
 Models included:   
     - K-Nearest Neighbors
     - Naive Bayes
@@ -12,6 +16,7 @@ Models included:
 Models included:   
     - Simple/Multiple linear regression
     - Neural network
-
-### Additional jupyter notebook on California housing price:
-California housing price predictions: inspired by https://www.kaggle.com/code/heyrobin/house-price-prediction-beginner-s-notebook + https://www.kaggle.com/code/anubhavgoyal10/california-house-price-combining-4-models/notebook
+### Runable script 2:
+- california_housing_price.ipynb: California housing price predictions. Data and parts of codes are from sources
+  1. https://www.kaggle.com/code/heyrobin/house-price-prediction-beginner-s-notebook
+  2.  https://www.kaggle.com/code/anubhavgoyal10/california-house-price-combining-4-models/notebook
